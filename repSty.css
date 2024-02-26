@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 100vh;
+    width: 100%; 
+    background-image:url(RepBG.jpeg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+}
+.logo{
+    width: 200px;
+    cursor: pointer;
+    left: 0;
+    height: 150px;
+}
+.homeBtn{
+    width: 60px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+}
+.content h1{
+    color: black;
+    font-size: 50px;
+}
+.content h2{
+    color: rgb(177, 121, 121);
+    font-size: 45px;
+}
+.content ul{
+    font-size: 30px;
+    color: rgb(6, 27, 66);
+}
+.content p1{
+    bottom: 40px;
+    font-size: 25px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewprt" content="width=device-width, inital-scale=1.0">
+        <title>Show Room</title>
+        <link rel="stylesheet" href="showRmSty.css">
+    </head>
+    <body>
+        <div class="gallery-wrap">
+            <img src="Gallery/B.png" id="Bbtn">
+            <div class="gallery">
+            <div>
+                <span><img src="Gallery/1mg.jpg"></span>
+                <span><img src="Gallery/5mg.jpg"></span>
+                <span><img src="Gallery/2mg.jpg"></span>
+            </div>
+            <div>
+                <span><img src="Gallery/3mg.jpg"></span>
+                <span><img src="Gallery/4mg.jpg"></span>
+                <span><img src="Gallery/6mg.jpg"></span>
+            </div>
+        </div>
+        <img src="Gallery/N.png" id="Nbtn">
+        </div>
+        <script>
+        
+        let scrollContainer = document.querySelector(".gallery");
+        let Bbtn = document.getElementById("Bbtn");
+        let Nbtn = document.getElementById("Nbtn");
+
+        scrollContainer.addEventListener("wheel", (evt) => {
+        evt.preventDefault();
+        scrollContainer.scrollLeft += evt.deltaY;
+        scrollContainer.style.scrollBehaviour = "auto";
+        });
+
+            Nbtn.addEventListener("click", ()=>{
+                scrollContainer.style.scrollBehaviour = "smooth";
+                scrollContainer.scrollLeft += 900;
+            });
+
+            Bbtn.addEventListener("click", ()=>{
+                scrollContainer.style.scrollBehaviour = "smooth";
+                scrollContainer.scrollLeft = 900;
+            });
+
+        </script>
+    </body>
+</html>
